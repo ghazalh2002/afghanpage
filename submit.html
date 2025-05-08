@@ -1,0 +1,42 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0"/>
+  <title>Submit a Proverb</title>
+  <link rel="stylesheet" href="styles.css" />
+</head>
+<body>
+  <header>
+    <h1>Submit Your Proverb</h1>
+    <p>Share the wisdom of your culture</p>
+  </header>
+
+  <nav>
+    <a href="index.html">Home</a>
+    <a href="gallery.html">Gallery</a>
+    <a href="submit.html">Submit Proverb</a>
+    <a href="about.html">About</a>
+    <a href="contact.html">Contact</a>
+  </nav>
+
+  <main>
+    <form>
+      <label for="proverb">Proverb in Dari or Pashto:</label>
+      <input type="text" id="proverb" name="proverb" placeholder="مثلاً: هرکه بامش بیش، برفش بیشتر" required />
+
+      <label for="translation">English Translation:</label>
+      <input type="text" id="translation" name="translation" placeholder="He who has a taller roof, gets more snow" required />
+
+      <label for="meaning">Meaning / Explanation:</label>
+      <textarea id="meaning" name="meaning" rows="4" placeholder="Explain the meaning behind the proverb..." required></textarea>
+
+      <button type="submit">Submit Proverb</button>
+    </form>
+  </main>
+
+  <footer>
+    <p>Reflection of Afghan Wisdom — 2025</p>
+  </footer>
+</body>
+</html>

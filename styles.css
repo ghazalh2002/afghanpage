@@ -1,0 +1,328 @@
+/* فونت‌ها */
+@import url('https://fonts.googleapis.com/css2?family=Noto+Naskh+Arabic&family=Noto+Nastaliq+Urdu&family=Montserrat:wght@400;600&display=swap');
+
+:root {
+  --blue: #1b6680;
+  --cream: #fdf6e3;
+  --gold: #af791c;
+  --dark: #164dc4;
+  --border: #37b958;
+  --light: #ffffff;
+}
+
+body {
+  font-family: 'Montserrat', sans-serif;
+  margin: 0;
+  padding: 0;
+  color: var(--dark);
+  background-image: url(herat3.jpeg); /* مسیر تصویر پس‌زمینه */
+  background-size: cover;
+  background-position: center;
+  background-attachment: fixed;
+  position: relative;
+}
+
+body::before {
+  content: "";
+  position: fixed;
+  top: 0;
+  left: 0;
+  width: 100%;
+  height: 100%;
+  background-color: rgba(245, 245, 220, 0.9); /* لایه‌ی کرمی مات */
+  z-index: -1;
+}
+
+header {
+  background-color: var(--blue);
+  color: white;
+  text-align: center;
+  padding: 40px 20px;
+  width: 100%;
+}
+
+header h1 {
+  font-size: 3em;
+  margin: 0;
+  letter-spacing: 1px;
+}
+
+header p {
+  color: var(--gold);
+  font-size: 1.2em;
+}
+
+nav {
+  background-color: var(--gold);
+  width: 100%;
+  display: flex;
+  justify-content: center;
+  gap: 30px;
+  padding: 15px 0;
+}
+
+nav a {
+  text-decoration: none;
+  color: white;
+  font-weight: 600;
+  transition: 0.3s;
+}
+
+nav a:hover {
+  color: var(--blue);
+}
+
+main {
+  max-width: 1200px;
+  width: 100%;
+  padding: 40px 20px;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+}
+
+.intro {
+  text-align: center;
+  max-width: 800px;
+  font-size: 1.1em;
+  line-height: 1.7;
+}
+
+.search-bar {
+  margin-top: 30px;
+  width: 100%;
+  display: flex;
+  justify-content: center;
+}
+
+.search-bar form {
+  display: flex;
+  gap: 10px;
+}
+
+.search-bar input {
+  padding: 12px;
+  width: 300px;
+  border: 1px solid var(--border);
+  border-radius: 5px;
+}
+
+.search-bar button {
+  padding: 12px 20px;
+  background-color: var(--blue);
+  color: white;
+  border: none;
+  border-radius: 5px;
+  cursor: pointer;
+}
+
+.search-bar button:hover {
+  background-color: #2e5968;
+}
+
+.gallery-section {
+  width: 100%;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  padding: 60px 20px;
+  background-color: rgba(255, 255, 255, 0.75); /* نیمه شفاف */
+  margin-top: 40px;
+  border-radius: 15px;
+}
+
+.gallery-section h2 {
+  font-size: 2.5em;
+  color: var(--blue);
+  margin-bottom: 30px;
+}
+
+.gallery {
+  display: grid;
+  grid-template-columns: repeat(auto-fit, minmax(250px, 1fr));
+  gap: 25px;
+  width: 100%;
+  max-width: 1000px;
+}
+
+.proverb-card {
+  background-color: var(--light);
+  border-left: 6px solid var(--blue);
+  padding: 20px;
+  border-radius: 10px;
+  transition: 0.3s;
+  text-align: center;
+  box-shadow: 0 6px 12px rgba(0,0,0,0.1);
+}
+
+.proverb-card:hover {
+  background-color: #eef2f4;
+}
+
+.proverb-text {
+  font-family: 'Noto Nastaliq Urdu', serif;
+  direction: rtl;
+  font-size: 1.5em;
+  color: var(--blue);
+  margin-bottom: 10px;
+}
+
+.translation {
+  font-style: italic;
+  color: var(--dark);
+}
+
+.meaning {
+  display: none;
+  margin-top: 12px;
+  background-color: var(--gold);
+  color: white;
+  padding: 8px;
+  border-radius: 6px;
+}
+
+.proverb-card:hover .meaning {
+  display: block;
+}
+
+.interactive-wall {
+  width: 100%;
+  max-width: 600px;
+  margin-top: 60px;
+  background-color: rgba(255, 255, 255, 0.85);
+  padding: 30px;
+  border-radius: 10px;
+}
+
+.interactive-wall h2 {
+  text-align: center;
+  color: var(--blue);
+  margin-bottom: 20px;
+}
+
+.interactive-wall form {
+  display: flex;
+  flex-direction: column;
+  gap: 15px;
+}
+
+.interactive-wall input,
+.interactive-wall textarea {
+  padding: 12px;
+  border: 1px solid var(--border);
+  border-radius: 5px;
+  font-family: inherit;
+  font-size: 1em;
+}
+
+.interactive-wall button {
+  padding: 12px;
+  background-color: var(--blue);
+  color: white;
+  border: none;
+  border-radius: 5px;
+  cursor: pointer;
+}
+
+.interactive-wall button:hover {
+  background-color: #2e5968;
+}
+
+footer {
+  background-color: var(--blue);
+  color: white;
+  text-align: center;
+  padding: 10px;
+  margin-top: 20px;
+  width: 100%;
+}/* About Section */
+.about-section {
+  text-align: center;
+  max-width: 800px;
+  margin: 50px auto;
+  padding: 20px;
+  background-color: rgba(255, 255, 255, 0.8);
+  border-radius: 10px;
+  box-shadow: 0 4px 8px rgba(0,0,0,0.1);
+}
+
+.about-section h2 {
+  font-size: 2em;
+  color: var(--blue);
+  margin-bottom: 20px;
+}
+
+.about-section p {
+  font-size: 1.2em;
+  line-height: 1.6;
+  color: var(--dark);
+}
+
+/* Footer */
+footer {
+  background-color: var(--blue);
+  color: white;
+  text-align: center;
+  padding: 20px;
+  margin-top: 60px;
+  width: 100%;
+}/* Contact Page Styles */
+.contact-container {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  padding: 60px 20px;
+  background-color: rgba(253, 246, 227, 0.95);
+  border-radius: 12px;
+  max-width: 800px;
+  margin: 60px auto;
+  box-shadow: 0 10px 20px rgba(0, 0, 0, 0.1);
+}
+
+.contact-container h2 {
+  color: var(--blue);
+  font-size: 2.5em;
+  margin-bottom: 20px;
+  text-align: center;
+}
+
+.contact-container p {
+  text-align: center;
+  color: var(--dark);
+  font-size: 1.1em;
+  margin-bottom: 30px;
+  max-width: 600px;
+}
+
+.contact-form {
+  width: 100%;
+}
+
+.contact-form input,
+.contact-form textarea {
+  width: 100%;
+  padding: 15px;
+  margin-bottom: 20px;
+  border-radius: 8px;
+  border: 1px solid var(--border);
+  font-family: inherit;
+  font-size: 1em;
+  background-color: white;
+}
+
+.contact-form button {
+  background-color: var(--blue);
+  color: white;
+  padding: 12px 25px;
+  border: none;
+  border-radius: 8px;
+  font-weight: bold;
+  font-size: 1em;
+  cursor: pointer;
+  transition: 0.3s;
+  width: 100%;
+}
+
+.contact-form button:hover {
+  background-color: #2e5968;
+}

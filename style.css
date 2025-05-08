@@ -1,0 +1,104 @@
+/* استایل کلی برای فرم تماس */
+.contact-page {
+    max-width: 1000px;
+    margin: 0 auto;
+    padding: 40px 20px;
+    background-color: var(--cream);
+    border-radius: 10px;
+    box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
+}
+
+.contact-page h1 {
+    font-size: 2.5em;
+    text-align: center;
+    color: var(--blue);
+    margin-bottom: 20px;
+}
+
+.contact-form {
+    display: flex;
+    flex-direction: column;
+    gap: 20px;
+}
+
+.contact-form label {
+    font-size: 1.1em;
+    color: var(--dark);
+    font-weight: 600;
+}
+
+.contact-form input, .contact-form textarea {
+    padding: 12px;
+    font-size: 1em;
+    border-radius: 5px;
+    border: 1px solid var(--border);
+    width: 100%;
+    margin-top: 8px;
+}
+
+.contact-form textarea {
+    resize: vertical;
+    height: 150px;
+}
+
+.contact-form button {
+    background-color: var(--blue);
+    color: white;
+    font-weight: bold;
+    padding: 12px 20px;
+    border: none;
+    border-radius: 5px;
+    cursor: pointer;
+    transition: background-color 0.3s;
+    margin-top: 20px;
+}
+
+.contact-form button:hover {
+    background-color: #2e5968;
+}
+
+/* استایل برای نمایش خطا یا پیغام موفق */
+.contact-message {
+    text-align: center;
+    margin-top: 20px;
+    font-size: 1.2em;
+}
+
+.contact-message.success {
+    color: #28a745;
+}
+
+.contact-message.error {
+    color: #dc3545;
+}
+
+/* برای استفاده در ناوبری */
+nav {
+    background-color: var(--blue);
+    width: 100%;
+    display: flex;
+    justify-content: center;
+    gap: 30px;
+    padding: 15px 0;
+}
+
+nav a {
+    text-decoration: none;
+    color: white;
+    font-weight: 600;
+    transition: 0.3s;
+}
+
+nav a:hover {
+    color: var(--gold);
+}
+
+/* اضافه کردن فاصله از بالای صفحه */
+body {
+    margin-top: 0;
+    background-image: url('herat7.webp');
+    background-size: cover;
+    background-position: center;
+    background-attachment: fixed;
+    font-family: 'Montserrat', sans-serif;
+}
